@@ -4,22 +4,17 @@
 <head>
     <title>Conversations with Giant Pandas</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/one_page_website.css">
 </head>
 
 <body>
     <!--  NAV  -->
     <div>
         <div>
-            <ul>
-                <a href="#home" id="link">
-                    <li>HOME</li>
-                </a>
-                <a href="#gallery">
-                    <li>GALLERY</li>
-                </a>
-                <a href="#contact">
-                    <li>CONTACT</li>
-                </a>
+            <ul class="menu_list">
+                <li class="menu_item"><a href="#home">HOME</a></li>
+                <li class="menu_item"><a href="#gallery">GALLERY</a></li>
+                <li class="menu_item"><a href="#ask">ASK</a></li>
             </ul>
         </div>
     </div>
@@ -27,87 +22,83 @@
 
     <!--  HOME  -->
     <div id="home">
-        <div>
-            <div>
-                <span>Conversations with Giant Pandas</span>
-            </div>
-        </div>
+                <span class="main_title">Conversations with Giant Pandas</span>
     </div>
     <!--  END HOME  -->
 
     <!--  GALLERY  -->
-    <sectiion>
-        <div id="gallery">
+    <section id="gallery">
+        <div class="container">
             <h1>Gallery</h1>
-            <div>
+            <div class="flex-container">
 
                 <!--  PHOTO CONTAINER 1  -->
-                <div>
-                    <div>
+                <div class="photo-container">
+                    <div class="photo">
                         <img src="./images/panda_1.jpg" alt="panda">
-                        <div>
-                            <h3>Click to Enlarge</h3>
-                            <p>Do you have a question for me? Ask me!</p>
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Bao Bao says:</h3>
+                            <p>"A panda with one chopstick goes hungry."</p>
                         </div>
                     </div>
                 </div>
                 <!-- END PHOTO CONTAINER 1  -->
 
                 <!--  PHOTO CONTAINER 2  -->
-                <div>
-                    <div>
+                <div class="photo-container">
+                    <div class="photo">
                         <img src="./images/panda_2.jpg" alt="panda">
-                        <div>
-                            <h3>Click to Enlarge</h3>
-                            <p>Do you have a question for me? Ask me!</p>
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Hua Mei says:</h3>
+                            <p>"Do not use a hatchet to remove a fly from your friend’s forehead."</p>
                         </div>
                     </div>
                 </div>
                 <!-- END PHOTO CONTAINER 2  -->
 
                 <!--  PHOTO CONTAINER 3  -->
-                <div>
-                    <div>
+                <div class="photo-container">
+                    <div class="photo">
                         <img src="./images/panda_3.jpeg" alt="panda">
-                        <div>
-                            <h3>Click to Enlarge</h3>
-                            <p>Do you have a question for me? Ask me!</p>
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Jiao Qing says:</h3>
+                            <p>"Those who jump off a cliff jump to a conclusion."</p>
                         </div>
                     </div>
                 </div>
                 <!-- END PHOTO CONTAINER 3  -->
 
                 <!--  PHOTO CONTAINER 4  -->
-                <div>
-                    <div>
+                <div class="photo-container">
+                    <div class="photo">
                         <img src="./images/panda_4.jpg" alt="panda">
-                        <div>
-                            <h3>Click to Enlarge</h3>
-                            <p>Do you have a question for me? Ask me!</p>
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Tai Shan says:</h3>
+                            <p>"Wealth is but dung, useful only when spread."</p>
                         </div>
                     </div>
                 </div>
                 <!-- END PHOTO CONTAINER 4  -->
 
                 <!--  PHOTO CONTAINER 5  -->
-                <div>
-                    <div>
+                <div class="photo-container">
+                    <div class="photo">
                         <img src="./images/panda_5.jpg" alt="panda">
-                        <div>
-                            <h3>Click to Enlarge</h3>
-                            <p>Do you have a question for me? Ask me!</p>
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Mei Sheng says:</h3>
+                            <p>"A panda who eats crackers in bed wakes up feeling crummy."</p>
                         </div>
                     </div>
                 </div>
                 <!-- END PHOTO CONTAINER 5  -->
 
                 <!--  PHOTO CONTAINER 6  -->
-                <div>
-                    <div>
+                <div class="photo-container">
+                    <div class="photo">
                         <img src="./images/panda_6.jpg" alt="panda">
-                        <div>
-                            <h3>Click to Enlarge</h3>
-                            <p>Do you have a question for me? Ask me!</p>
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Xin Xin says:</h3>
+                            <p>"A panda who keeps it's feet firmly on the ground has trouble putting on pants."</p>
                         </div>
                     </div>
                 </div>
@@ -115,38 +106,30 @@
 
             </div>
         </div>
-    </sectiion>
+    </section>
     <!--  END GALLERY  -->
 
-    <!-- VIDEO  -->
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/9YkrojbbwiA" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>Î
-
-    <!--  END VIDEO  -->
+    <br><br>
 
     <!--  Contact  -->
-    <section>
-        <div id="contact">
-            <div>
-                <h1>Contact</h1>
-                <div>
-                    <h2><span>A giant panda will answer your pressing questions.</span>
-                        <br />Ask now!
-                    </h2>
+    <section id="ask">
+        <div class="container">
+            <div class="heading-padding">
+                <h1 class="heading-padding">Ask</h1>
+                <div class="asking">
+                    <h2><span>A giant panda will answer your pressing questions.</span></h2>
                     <p>Please provide us with your information.</p>
                     <div>
                         <form action="" method="post">
-                            <input class="contact" type="text" value="First Name">
-                            <input class="contact" type="text" value="Last Name">
-                            <input class="contact" type="email" value="Email Address">
-                            <input class="contact" type="text" value="Question">
+                            <input class="contact" type="text" placeholder="First Name">
+                            <input class="contact" type="text" placeholder="Last Name">
+                            <input class="contact" type="text" placeholder="Email Address">
+                            <input class="contact" type="text" placeholder="Question">
                             <div class="form-spacer">
                                 <br>
                                 <label class="terms">Terms and Conditions</label>
                             </div>
-                            <div>
+                            <div class="submit"> 
                                 <br><br>
                                 <input type="submit" value="Submit">
                             </div>
@@ -156,13 +139,12 @@
             </div>
         </div>
     </section>
-    <!--  END DONATE  -->
+    <!--  END CONTACT  -->
 
     <!--  FOOTER  -->
-    <div>
+    <div id="footer">
         <footer>
-            <br><br>
-            www.talktogiantpandas.org &nbsp; &nbsp; &copy; 2021
+            www.talktogiantpandas.org &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &copy; 2021 Jaq Law
         </footer>
     </div>
     <!-- END FOOTER  -->
