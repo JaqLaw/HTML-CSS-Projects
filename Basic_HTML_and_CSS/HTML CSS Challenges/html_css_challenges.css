@@ -1,0 +1,182 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    filter: grayscale(100%);
+    border-radius: 15px;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}
+
+table, th, td {
+    border: 1px solid gray;
+}
+
+td, th {
+    padding: 15px;
+}
+
+th {
+    background-color: lightgoldenrodyellow;
+}
+
+.centertable {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+
+.imageholder {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background: url(hen.jpg);
+    width: 600px;
+    height: 400px;
+}
+
+
+.bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0.5em;
+    width: 400px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.main {
+    margin-top: 60px;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+    color: purple;
+    height: 30px;
+    width: auto;
+    margin-bottom: 30px;
+    background-color: grey;
+}
+
+p:hover {
+    color:hotpink;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        background-color: blue;
+    }
+}
+
+/* ---------------------------------------
+    IMAGE WITH OVERLAY
+-----------------------------------------*/
+
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+
+
+/* ---------------------------------------
+    VIDEO WITH OVERLAY
+-----------------------------------------*/
+
+.videocontainer {
+    position: relative;
+    width: 50%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+.overlayvideo {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .videocontainer:hover .overlayvideo {
+    opacity: 1;
+  }
