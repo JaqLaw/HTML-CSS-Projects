@@ -15,6 +15,7 @@
 
 <body>
 
+  <!-- top menu -->
   <div class="container">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-info">
@@ -37,8 +38,9 @@
         </form>
       </div>
     </nav>
+    <!-- /top menu -->
 
-
+    <!-- main title area -->
     <div class="jumbotron jumbotron-fluid bg-info text-center">
       <div class="container">
         <h1 class="display-4 text-light">Montessori at Home</h1>
@@ -46,21 +48,19 @@
           We're here to help change that.</p>
       </div>
     </div>
+    <!-- main title area -->
 
+    <!-- first set of columns -->
     <div class="container" id="about">
       <div class="row">
         <div class="col-sm">
-
           <img class="img-fluid" src="./Img/dishes.jpg" alt="" />
-
-
         </div>
         <div class="col-sm">
 
           <h3>Use what you have.</h3>
           <p>Montessori doesn't require expensive materials. Utilize what you have to create an environment that
             supports independence, intrinsic motivation and a love of learning.</p>
-
 
         </div>
         <div class="col-sm">
@@ -80,8 +80,9 @@
         </div>
       </div>
     </div>
+    <!-- /first set of columns -->
 
-    <!-- Ideas -->
+    <!-- ideas cards -->
 
     <div class="card-deck my-5" id="ideas">
       <div class="card">
@@ -122,8 +123,22 @@
       </div>
     </div>
 
-    <!-- End Ideas -->
+    <!-- /idea cards -->
 
+    <!-- jumbotron heading -->
+    <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+      <div class="container">
+        <h1 class="display-4 hidden-sm-down"
+          style="color:fff;font-family:roboto;font-weight: 900;">
+          Share Your Ideas With Us!
+        </h1>
+        <p class="lead">If you have a great Montessori At Home idea, we'll post it</p>
+        <button type="button" data-toggle="modal" data-target="#share" class="btn btn-outline-primary">Click here</button>
+      </div>
+    </div>
+    <!-- /jumbotron heading -->
+
+    <!-- signup form -->
 
     <div class="text-center" id="newsletter">
       <form>
@@ -132,10 +147,60 @@
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
             placeholder="Enter email">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-primary btn-info popover-dismiss" data-container="body"
+          data-toggle="popover" data-placement="top"
+          data-content="Submit your email to receive great Montessori At Home ideas in your inbox.">
+          Submit
+        </button>
       </form>
     </div>
 
+    <!-- /signup form -->
+
+    <!-- form modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="share">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Submit your ideas!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            <form>
+              <fieldset class="form-group">
+                <label for="firstname">First Name:</label>
+                <input type="text" class="form-control" id="firstname" placeholder="First Name...">
+              </fieldset>
+              <fieldset class="form-group">
+                <label for="lastname">First Name:</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Last Name...">
+              </fieldset>
+              <fieldset class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" class="form-control" id="firstname" placeholder="Email...">
+              </fieldset>
+              <fieldset class="form-group">
+                <label for="idea">Your Idea:</label>
+                <textarea class="form-control" id="idea" rows="3" placeholder="Type your idea here..."></textarea>
+              </fieldset>
+            </form>
+          
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /form modal -->
+
+    <!-- footer -->
     <div class="container mt-5">
       <ul class="nav nav-inline justify-content-center">
         <li class="nav-item">
@@ -150,6 +215,7 @@
       </ul>
     </div>
 
+    <!-- /footer -->
 
 
 
@@ -166,6 +232,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+
+  <script>
+    $('.popover-dismiss').popover({
+      trigger: 'focus'
+    })
+  </script>
 </body>
 
 </html>
