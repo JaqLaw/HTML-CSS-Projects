@@ -4,28 +4,18 @@
 <head>
     <title>A website for Kat</title>
     <meta charset="utf-8">
+    
 </head>
 
 <body>
-    <style>
-        body {
-            background: black;
-            color: white;
-        }
-        img {
-            border: 2px solid grey;
-        }
 
-        h1 {
-            color: #42e3f5;
-        }
+    <script>
+        document.body.classList.add('fade-out');
+    </script>
 
-        h3 {
-            color: #42e3f5;
-        }
-    </style>
-    <main>
-        <center>
+    <link rel="stylesheet" type="text/css" href="Assignment.css">
+    
+
         <h1><u>My feelings in binary</u></h1><br>
         <h2>I like you.</h2><br>
         <h3>Also, I love you.</h3><br>
@@ -34,12 +24,17 @@
         <img src="https://i.redd.it/mkui6h4f05841.jpg" width="500">
         <blockquote>"I really like the before, during and after." -Kat</blockquote>
        
-   
-    </center>
-    </main>
+
+
+<script>
+
+    window.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.remove('fade-out');
+    });
+</script>
+
 </body>
 <br><br>
-<center>
 <footer>&copy;Jaq made this page.</footer>
-</center>
+
 </html>

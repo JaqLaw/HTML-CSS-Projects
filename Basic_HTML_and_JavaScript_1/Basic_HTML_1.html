@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <body>
-        <p><font color="purple" face="impact" size="7"><i>I'm purple!</i></font></p>
-        <p><font color="1ED5C3"><b><u>I'm teal!</u></b></font></p>
-        <img src="slow loris.jpg" alt="no pic sorry">
-<script src="Basic_JavaScript_1.js">
-</script>
-    </body>
+<style>
+    @keyframes zoominoutsinglefeatured {
+        0% {
+            transform: scale(1, 1);
+        }
+
+        50% {
+            transform: scale(1.2, 1.2);
+        }
+
+        100% {
+            transform: scale(1, 1);
+        }
+    }
+
+    .zoom {
+        animation: zoominoutsinglefeatured 15s forwards;
+    }
+</style>
+
+<body>
+    <p>
+        <font color="purple" face="impact" size="7"><i>I'm purple!</i></font>
+    </p>
+    <p>
+        <font color="1ED5C3"><b><u>I'm teal!</u></b></font>
+    </p>
+    <img src="slow loris.jpg" alt="no pic sorry" class="zoom">
+    <script src="Basic_JavaScript_1.js">
+    </script>
+</body>
+
 </html>

@@ -2,6 +2,10 @@
 <html>
 
 <body>
+    <script>
+        document.body.classList.add('fade-out');
+    </script>
+
     <link rel="stylesheet" type="text/css" href="Basic_CSS_2.css">
     <section>
         <h1>Styled font</h1>
@@ -25,6 +29,15 @@
         </details>
     </article>
 <br><br>
+
+<script>
+
+    window.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.remove('fade-out');
+    });
+</script>
+
+
 </body>
 <footer>
     &copy;Made by Jaq.
